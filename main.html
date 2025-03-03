@@ -30,44 +30,44 @@
             is low and
           </p>
           <div class="cards grid grid-cols-3 mt-5 gap-2 p-2">
-            <div
+            <div id="add-money-click"
               class="box border cursor-pointer p-4 text-center text-sm rounded-2xl"
             >
               <img class="w-8 mx-auto" src="assets/wallet 1.png" alt="" />
               <h3>Add Money</h3>
             </div>
-            <div
+            <div id="cash-out-click"
               class="box border cursor-pointer p-4 text-center text-sm rounded-2xl"
             >
               <img class="w-8 mx-auto" src="assets/send 1.png" alt="" />
               <h3>Cash Out</h3>
             </div>
-            <div
+            <div id="transfer-money-click"
               class="box border cursor-pointer p-4 text-center text-sm rounded-2xl"
             >
               <img class="w-8 mx-auto" src="assets/money 1.png" alt="" />
               <h3>Transfer Money</h3>
             </div>
-            <div
+            <div id="get-bonus-click"
               class="box border cursor-pointer p-4 text-center text-sm rounded-2xl"
             >
               <img class="w-8 mx-auto" src="assets/financial 1.png" alt="" />
               <h3>Get Bonus</h3>
             </div>
-            <div
+            <div id="pay-bills-click"
               class="box border cursor-pointer p-4 text-center text-sm rounded-2xl"
             >
               <img class="w-8 mx-auto" src="assets/purse 1.png" alt="" />
               <h3>Pay Bills</h3>
             </div>
-            <div
+            <div id="transaction-click"
               class="box border cursor-pointer p-4 text-center text-sm rounded-2xl"
             >
               <img class="w-8 mx-auto" src="assets/transaction 1.png" alt="" />
               <h3>Transactions</h3>
             </div>
           </div>
-          <section>
+          <section id="addmoney" class="">
             <h2 class="ml-2 mt-2 text-xl font-semibold">Add money</h2>
             <div class="">
               <div class="hero-content flex-col lg:flex-row-reverse">
@@ -124,9 +124,200 @@
               </div>
             </div>
           </section>
+
+          <section id="cashout">
+            <h2 class="ml-2 mt-2 text-xl font-semibold">Cash Out</h2>
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <div class="card-body">
+                    
+                    <fieldset class="fieldset">
+                      <label class="fieldset-label">Account Number</label>
+                      <input
+                        value="01937165042"
+                        id="account-number"
+                        type="number"
+                        class="input"
+                        placeholder="Type your AC number..."
+                        required
+                      />
+                      <label class="fieldset-label">Amount</label>
+                      <input
+                        id="amount"
+                        type="number"
+                        class="input"
+                        placeholder="Type Amount..."
+                        required
+                      />
+                      <label class="fieldset-label">PIN</label>
+                      <input
+                        value="1234"
+                        id="pin"
+                        type="text"
+                        class="input"
+                        placeholder="Type your 4-digit PIN"
+                        required
+                      />
+                      <div><a class="link link-hover">Forgot password?</a></div>
+
+                      <button
+                        id="add-money"
+                        id="login-btn"
+                        class="btn rounded-full bg-[#2e83e8] text-white mt-4"
+                      >
+                        Withdraw
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="transfer-money">
+            <h2 class="ml-2 mt-2 text-xl font-semibold">Transfer Money</h2>
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <div class="card-body">
+                    
+                    <fieldset class="fieldset">
+                      <label class="fieldset-label">Account Number</label>
+                      <input
+                        value="01937165042"
+                        id="account-number"
+                        type="number"
+                        class="input"
+                        placeholder="Type your AC number..."
+                        required
+                      />
+                      <label class="fieldset-label">Amount</label>
+                      <input
+                        id="amount"
+                        type="number"
+                        class="input"
+                        placeholder="Type Amount..."
+                        required
+                      />
+                      <label class="fieldset-label">PIN</label>
+                      <input
+                        value="1234"
+                        id="pin"
+                        type="text"
+                        class="input"
+                        placeholder="Type your 4-digit PIN"
+                        required
+                      />
+                      <div><a class="link link-hover">Forgot password?</a></div>
+
+                      <button
+                        id="add-money"
+                        id="login-btn"
+                        class="btn rounded-full bg-[#2e83e8] text-white mt-4"
+                      >
+                        Send now
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="get-bonus">
+            <h2 class="ml-2 mt-2 text-xl font-semibold">Get Bonus</h2>
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <div class="card-body">
+                    
+                    
+                      <label class="fieldset-label">Enter your bonus coupon.</label>
+                      <input
+                        id="amount"
+                        type="number"
+                        class="input"
+                        placeholder="Coupon code..."
+                        required
+                      />
+                      <button
+                        id="add-money"
+                        id="login-btn"
+                        class="btn rounded-full bg-[#2e83e8] text-white mt-4"
+                      >
+                        Get 
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="pay-bills" class="">
+            <h2 class="ml-2 mt-2 text-xl font-semibold">Pay Bill</h2>
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <div class="card-body">
+                    <legend>Select Bill</legend>
+                    <select class="select">
+                      <option disabled selected>Select</option>
+                      <option value="Water">Water</option>
+                      <option value="Gas">Gas</option>
+                      <option value="Electricity">Electricity</option>
+                    </select>
+                    <fieldset class="fieldset">
+                      <label class="fieldset-label">Account Number</label>
+                      <input
+                        value="01937165042"
+                        id="account-number"
+                        type="number"
+                        class="input"
+                        placeholder="Type your AC number..."
+                        required
+                      />
+                      <label class="fieldset-label">Amount</label>
+                      <input
+                        id="amount"
+                        type="number"
+                        class="input"
+                        placeholder="Type Amount..."
+                        required
+                      />
+                      <label class="fieldset-label">PIN</label>
+                      <input
+                        value="1234"
+                        id="pin"
+                        type="text"
+                        class="input"
+                        placeholder="Type your 4-digit PIN"
+                        required
+                      />
+
+                      <button
+                        id="add-money"
+                        id="login-btn"
+                        class="btn rounded-full bg-[#2e83e8] text-white mt-4"
+                      >
+                        Pay
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
       </header>
     </section>
     <script src="js/addMoney.js"></script>
+    <script src="js/toggle.js"></script>
   </body>
 </html>
