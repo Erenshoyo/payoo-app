@@ -3,6 +3,11 @@ document.getElementById("addmoney").style.display = "none";
 document.getElementById("cashout").style.display = "none";
 document.getElementById("transfer-money").style.display = "none";
 document.getElementById("pay-bills").style.display = "none";
+// function toggleHandler("get-bonus", "none");
+// function toggleHandler("addmoney", "none");
+// function toggleHandler("cashout", "none");
+// function toggleHandler("transfer-money", "none");
+// function toggleHandler("pay-bills", "none");
 
 document
   .getElementById("add-money-click")
@@ -54,11 +59,11 @@ document
     document.getElementById("get-bonus").style.display = "none";
     // document.getElementById("cashout").style.display = "none";
   });
-// document.getElementById("transaction-click").addEventListener("click",function(){
-//     document.getElementById("addmoney").style.display = "block";
-//     document.getElementById("cashout").style.display = "none";
-//     document.getElementById("transfer-money").style.display = "none";
-//     document.getElementById("get-bonus").style.display = "none";
-//     document.getElementById("pay-bills").style.display = "none";
-//     document.getElementById("").style.display = "none";
-// })
+document.getElementById("transaction-click").addEventListener("click",function(){
+    document.getElementById("addmoney").style.display = "block";
+    document.getElementById("cashout").style.display = "none";
+    document.getElementById("transfer-money").style.display = "none";
+    document.getElementById("get-bonus").style.display = "none";
+    document.getElementById("pay-bills").style.display = "none";
+    document.getElementById("").style.display = "none";
+})
